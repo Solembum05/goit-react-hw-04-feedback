@@ -1,16 +1,17 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import Feedback  from './Feedback/Feedback.jsx'
+import React from 'react'
+
+
+class App extends React.Component {
+
+
+  render() {
+    return (
+      <div>
+        <Feedback state={this.state} />
+      </div>
+    );
+  }
+}
+
+  export default App
